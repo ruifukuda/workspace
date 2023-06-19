@@ -1,10 +1,4 @@
-
-/**
- * @author 0418AM
- *
- */
 public class Code15_3 {
-
 	public static void main(String[] args) {
 		String s1 = "Java programming";
 		System.out.println("文字列s1の4文字目以降は" + s1.substring(3));
@@ -24,5 +18,4 @@ public class Code15_3 {
 		String s3 = " My name is John. ";
 		System.out.println(s3.trim().replace("John", "Paul"));
 	}
-
 }

@@ -1,6 +1,4 @@
-
 public class Code15_1 {
-
 	public static void main(String[] args) {
 		String s1 = "スッキリJava";
 		String s2 = "Java";
@@ -15,7 +13,5 @@ public class Code15_1 {
 		if(s1.isEmpty()) {
 			System.out.println("s1は空文字です");
 		}
-
 	}
-
 }

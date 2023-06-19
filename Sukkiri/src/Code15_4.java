@@ -1,6 +1,4 @@
-
 public class Code15_4 {
-
 	public static void main(String[] args) throws Exception {
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0; i<100; i++) {
@@ -14,7 +12,5 @@ public class Code15_4 {
 		System.out.println(data1[0]);//こ
 		byte[] data2 = str.getBytes("utf-8");
 		System.out.println(data2[0]);
-
 	}
-
 }
