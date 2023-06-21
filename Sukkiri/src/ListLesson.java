@@ -1,9 +1,11 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 
 public class ListLesson {
 	public static void main(String[] args) {
-		ArrayList<String> names = new ArrayList<>();
+		List<String> names = new ArrayList<>();
 		names.add("John");
 		names.add("Paul");
 		names.add("Geoge");
@@ -24,7 +26,7 @@ public class ListLesson {
 			System.out.println(name);
 		}
 		
-		ArrayList<Integer> nums = new ArrayList<>();
+		List<Integer> nums = new ArrayList<>();
 		/*
 		 * Wrapper Class(ラッパークラス)
 		 * int -> Integer
@@ -37,28 +39,28 @@ public class ListLesson {
 		for(int i : nums) {
 			System.out.println(i);
 		}
-		ArrayList<Double> temps = new ArrayList<>();
+		List<Double> temps = new ArrayList<>();
 		temps.add(21.4);
 		temps.add(22.4);
 		temps.add(24.4);
 		for(double t : temps) {
 			System.out.println(t);
 		}
-		ArrayList<Boolean> bools = new ArrayList<>();
+		List<Boolean> bools = new ArrayList<>();
 		bools.add(true);
 		bools.add(false);
 		bools.add(false);
 		for(boolean b: bools) {
 			System.out.println(b);
 		}
-		ArrayList<Character> chars = new ArrayList<>();
+		List<Character> chars = new ArrayList<>();
 		chars.add('A');
 		chars.add('B');
 		chars.add('C');
 		for(char c : chars) {
 			System.out.println(c);
 		}
-		ArrayList<Fruits> list = new ArrayList<>();
+		List<Fruits> list = new ArrayList<>();
 		list.add(new Fruits("バナナ",50));
 		list.add(new Fruits("イチゴ",500));
 		list.add(new Fruits("リンゴ",500));
@@ -81,6 +83,21 @@ public class ListLesson {
 		System.out.println(removed);
 		list.clear();
 		System.out.println(list.size());//0
+		
+		List<String> sushi = new LinkedList<>();
+		sushi.add("まぐろ");
+		sushi.add("えび");
+		sushi.add("サーモン");
+		sushi.add("うに");
+		sushi.add("まぐろ");
+		sushi.add("えび");
+		sushi.add("いくら");
+		sushi.add("はまち");
+		sushi.add("ほたて");
+		System.out.println(sushi.size());
+		for(String s :sushi) {
+			System.out.println(s);
+		}
 	}
 }
 
